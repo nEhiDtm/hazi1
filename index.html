@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfejlesztés gyakorlása</title>
+    <script>
+        // Változók és konstansok
+        const myName = "Norbert";
+        const friendName = "Sanyi";
+        console.log("Az én nevem:", myName);
+        console.log("A barátom neve:", friendName);
+
+        const PI = 3.14159;
+        console.log("PI értéke:", PI);
+
+        // PI = 3.14; // Ez hibát okozna, mert a PI konstans és nem változtatható meg
+
+        // Különböző adattípusok
+        let age = 25; 
+        let isStudent = true; 
+        let hobbies = ["olvasás", "futás", "fényképezés"]; 
+        let address = { 
+            street: "Fő utca",
+            number: 10,
+            city: "Budapest"
+        };
+
+        // Objektum
+        const person = {
+            name: "Tibi",
+            age: 25,
+            city: "Budapest"
+        };
+        console.log("Person objektum:", person);
+
+        // Értékek definiálása
+        let initializedVar = "Inicializált változó";
+        let emptyVar;
+        console.log("Inicializált változó:", initializedVar);
+        console.log("Nem inicializált változó:", emptyVar); 
+
+        // Alap műveletek
+        let num1 = 10;
+        let num2 = 5;
+        let sum = num1 + num2;
+        let difference = num1 - num2;
+        let product = num1 * num2;
+        let quotient = num1 / num2;
+        let remainder = num1 % num2;
+
+        console.log("Összeadás:", sum);
+        console.log("Kivonás:", difference);
+        console.log("Szorzás:", product);
+        console.log("Osztás:", quotient);
+        console.log("Maradékos osztás:", remainder);
+
+        // Műveleti sorrend
+        let result1 = 10 + 5 * 2; 
+        let result2 = (10 + 5) * 2; 
+        console.log("Műveleti sorrend 1:", result1);
+        console.log("Műveleti sorrend 2:", result2);
+
+        // Böngésző interakció
+        alert("Üdvözöllek a weboldalon!");
+
+        const userName = prompt("Mi a neved?");
+        alert(`Szia, ${userName}! Örülök, hogy itt vagy!`);
+        console.log(`A felhasználó neve: ${userName}`);
+
+        // Elágazások
+        const userAge = prompt("Hány éves vagy?");
+        if (userAge >= 18) {
+            console.log("Hozzáférés engedélyezve: felnőtt tartalom.");
+            alert("Hozzáférés engedélyezve a felnőtt tartalomhoz!");
+        } else {
+            console.log("Hozzáférés megtagadva: korhatár alatti.");
+            alert("Sajnáljuk, de ez a tartalom csak 18 éven felülieknek érhető el.");
+        }
+
+        // Végezetül
+        const number1 = 15;
+        const number2 = 7;
+        const finalSum = number1 + number2;
+        console.log(`Az összeadás eredménye: ${number1} + ${number2} = ${finalSum}`);
+    </script>
+</head>
+<body>
+    <h1>Webfejlesztés gyakorlása</h1>
+    <p>Nyisd meg a böngésző konzolját (F12) az eredmények megtekintéséhez!</p>
+</body>
+</html>
